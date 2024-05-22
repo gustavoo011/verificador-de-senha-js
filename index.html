@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Senha</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5582/5582931.png" type="image/x-icon">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/2d8e591769.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--defer - carrega o html primeiro, evita erros no js-->
+  <div class="container">
+  <input class="checkbox" type="checkbox" id="checkbox">
+    <label class="label" for="checkbox">
+      <i class="fa-solid fa-moon"></i>
+      <i class="fa-solid fa-sun"></i>
+      <div class="ball"></div>
+    </label>
+    
+
+    <h2>Verificador de Senha</h2>
+    <p>Insira uma senha para verificar sua força: </p>
+    <input type="password" id="passwordInput" placeholder="Digite a senha...">
+    
+    <!--Classe para estilizar - Id para manipulação js-->
+    <div class="password-strength-bar">
+      <div class="strength-indicator" id="password-strength-indicator">
+      </div>
+    </div>
+    <p id="password-strength-text">
+      Senha fraca
+    </p>
+    <p id="tip">
+      A senha precisa conter letras maiúsuclas, letras minúsculas e caracteres especiais.
+    </p>
+
+  </div>
+</body>
+</html>
